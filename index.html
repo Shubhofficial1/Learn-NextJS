@@ -1,0 +1,21 @@
+<!-- Below code shows the boilerplate needed to show a h1 element on a webpage using JS Dom Manipulation -->
+<html>
+  <body>
+    <div id="app"></div>
+    <script type="text/javascript">
+      const app = document.getElementById('app')
+
+      //   Create a new header component
+      const header = document.createElement('h1')
+
+      //   Create a new text node for the header component
+      const headerNode = document.createTextNode('Its Working 🚀')
+
+      // append the child to header element
+      header.appendChild(headerNode)
+
+      //   Append the header to the app element
+      app.appendChild(header)
+    </script>
+  </body>
+</html>
