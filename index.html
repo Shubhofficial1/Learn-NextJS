@@ -39,9 +39,11 @@
       }
 
       function HomePage(){
-
+        const [likes,setLikes]=React.useState(0);
         const names = ['Ada Lovelace', 'Grace Hopper', 'Margaret Hamilton'];
-
+        const clickHandler=()=>{
+            setLikes(likes+1);
+        }
         return (
           <div>
             <Header title="Hey World 🚀" />
@@ -51,6 +53,7 @@
                 <li key={name}>{name}</li>
               ))}
             </ul>
+            <button onClick={clickHandler}>Likes {likes}</button>
           </div>
         )
       }
