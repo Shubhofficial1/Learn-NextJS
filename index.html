@@ -1,5 +1,6 @@
-<!-- Below code shows the boilerplate needed to show a h1 element on a webpage using JS Dom Manipulation -->
-<html>
+<!-- Below code shows the Imperative JS code to show a h1 element on a webpage  -->
+
+<!-- <html>
   <body>
     <div id="app"></div>
     <script type="text/javascript">
@@ -9,13 +10,28 @@
       const header = document.createElement('h1')
 
       //   Create a new text node for the header component
-      const headerNode = document.createTextNode('Its Working 🚀')
+      const headerNode = document.createTextNode('Its Working ')
 
       // append the child to header element
       header.appendChild(headerNode)
 
       //   Append the header to the app element
       app.appendChild(header)
+    </script>
+  </body>
+</html> -->
+
+<!-- Below code is declerative way to write render h1 element to the webpage using React Js Library -->
+
+<html>
+  <body>
+    <div id="app"></div>
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/jsx">
+      const app = document.getElementById('app')
+      ReactDOM.render(<h1>Hello World ! 🚀</h1>, app)
     </script>
   </body>
 </html>
